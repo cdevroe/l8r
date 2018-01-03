@@ -106,36 +106,36 @@ This lists a user's URL. By default, it shows the unarchived URLs.
 
 ```json
 {
-    list: [
-        link: [
-            id: 1,
-            title: "Colin Devroe &#8211; Reverse Engineer. Blogger.",
-            url: "http://cdevroe.com/",
-            source: "iOS Share Extension",
-            archived: 0,
-            note: "One of the best blogs evar.",
-            label: "Read",
-            tags: [
+    "list": [
+        "link": [
+            "id": 1,
+            "title": "Colin Devroe &#8211; Reverse Engineer. Blogger.",
+            "url": "http://cdevroe.com/",
+            "source": "iOS Share Extension",
+            "archived": 0,
+            "note": "One of the best blogs evar.",
+            "label": "Read",
+            "tags": [
                 0: "blog",
                 1: "personal",
                 2: "microblog"
             ],
-        context: "Home"
+            "context": "Home"
         ],
-        link: [
-            id: 2,
-            title: "Internet Archive: Digital Library of Free Books, Movies, Music & Wayback Machine",
-            url: "http://archive.org/",
-            source: "Chrome Extension",
-            archived: 1,
-            note: "",
-            label: "Read",
-            tags: [
+        "link": [
+            "id": 2,
+            "title": "Internet Archive: Digital Library of Free Books, Movies, Music & Wayback Machine",
+            "url": "http://archive.org/",
+            "source": "Chrome Extension",
+            "archived": 1,
+            "note": "",
+            "label": "Read",
+            "tags": [
                 0: "internet",
                 1: "history",
                 2: "non-profit"
             ],
-        context: "Work"
+            "context": "Work"
         ],
     ]
 }
@@ -165,19 +165,19 @@ Shows a URLs metadata.
 
 ```json
 {
-    id: 1,
-    title: "Colin Devroe &#8211; Reverse Engineer. Blogger.",
-    url: "http://cdevroe.com/",
-    archived: 0,
-    source: "iOS Share Extension",
-    note: "One of the best blogs evar.",
-    label: "Read",
-    tags: [
+    "id": 1,
+    "title": "Colin Devroe &#8211; Reverse Engineer. Blogger.",
+    "url": "http://cdevroe.com/",
+    "archived": 0,
+    "source": "iOS Share Extension",
+    "note": "One of the best blogs evar.",
+    "label": "Read",
+    "tags": [
         0: "blog",
         1: "personal",
         2: "microblog"
     ],
-    context: "Home"
+    "context": "Home"
 }
 ```
 
