@@ -106,7 +106,7 @@ This lists a user's URL. By default, it shows the unarchived URLs.
 
 ```json
 {
-    "links": [
+    "list": [
         {
             "id": 1,
             "title": "Colin Devroe &#8211; Reverse Engineer. Blogger.",
@@ -115,10 +115,21 @@ This lists a user's URL. By default, it shows the unarchived URLs.
             "archived": 0,
             "note": "One of the best blogs evar.",
             "label": "Read",
-            "tags": [
-                {0: "blog"},
-                {1: "personal"},
-                {2: "microblog"}
+            "tags":           {
+                    "id": 1,
+                    "label": "blog",
+                    "dateAdded": "12-01-2017"
+                },
+                {
+                    "id": 2,
+                    "label": "personal",
+                    "dateAdded": "12-04-2017"
+                },
+                {
+                    "id": 3,
+                    "label": "micro-blog",
+                    "dateAdded": "12-04-2017"
+                }
             ],
             "context": "Home"
         },
@@ -131,9 +142,21 @@ This lists a user's URL. By default, it shows the unarchived URLs.
             "note": "",
             "label": "Read",
             "tags": [
-                {0: "internet"},
-                {1: "history"},
-                {2: "non-profit"}
+                {
+                    "id": 4,
+                    "label": "internet",
+                    "dateAdded": "12-01-2017"
+                },
+                {
+                    "id": 5,
+                    "label": "history",
+                    "dateAdded": "12-04-2017"
+                },
+                {
+                    "id": 6,
+                    "label": "non-profit",
+                    "dateAdded": "12-04-2017"
+                }
             ],
             "context": "Work"
         },
@@ -173,10 +196,22 @@ Shows a URLs metadata.
     "note": "One of the best blogs evar.",
     "label": "Read",
     "tags": [
-        {0: "blog"},
-        {1: "personal"},
-        {2: "microblog"}
-    ],
+      {
+         "id": 1,
+         "label": "blog",
+         "dateAdded": "12-01-2017"
+      },
+      {
+         "id": 2,
+         "label": "personal",
+         "dateAdded": "12-04-2017"
+      },
+      {
+         "id": 3,
+         "label": "micro-blog",
+         "dateAdded": "12-04-2017"
+      }
+   ],
     "context": "Home"
 }
 ```
