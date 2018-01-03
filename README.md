@@ -106,8 +106,8 @@ This lists a user's URL. By default, it shows the unarchived URLs.
 
 ```json
 {
-    "list": [
-        "link": [
+    "links": [
+        {
             "id": 1,
             "title": "Colin Devroe &#8211; Reverse Engineer. Blogger.",
             "url": "http://cdevroe.com/",
@@ -116,13 +116,13 @@ This lists a user's URL. By default, it shows the unarchived URLs.
             "note": "One of the best blogs evar.",
             "label": "Read",
             "tags": [
-                0: "blog",
-                1: "personal",
-                2: "microblog"
+                {0: "blog"},
+                {1: "personal"},
+                {2: "microblog"}
             ],
             "context": "Home"
-        ],
-        "link": [
+        },
+        {
             "id": 2,
             "title": "Internet Archive: Digital Library of Free Books, Movies, Music & Wayback Machine",
             "url": "http://archive.org/",
@@ -131,12 +131,12 @@ This lists a user's URL. By default, it shows the unarchived URLs.
             "note": "",
             "label": "Read",
             "tags": [
-                0: "internet",
-                1: "history",
-                2: "non-profit"
+                {0: "internet"},
+                {1: "history"},
+                {2: "non-profit"}
             ],
             "context": "Work"
-        ],
+        },
     ]
 }
 ```
@@ -173,9 +173,9 @@ Shows a URLs metadata.
     "note": "One of the best blogs evar.",
     "label": "Read",
     "tags": [
-        0: "blog",
-        1: "personal",
-        2: "microblog"
+        {0: "blog"},
+        {1: "personal"},
+        {2: "microblog"}
     ],
     "context": "Home"
 }
