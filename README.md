@@ -13,28 +13,28 @@ An API that stores URLs to read, watch, listen to later on any device.
 
 ### Methods
 
-- /add              - add new URL
-- /archive          - archive a URL
-- /delete           - delete a URL
-- /edit             - edit a URL's metadata
-- /list             - list a user's URLs
-- /restore          - unarchive a URL
-- /view             - show a URL's metadata
+- `/add`              - add new URL
+- `/archive`          - archive a URL
+- `/delete`           - delete a URL
+- `/edit`             - edit a URL's metadata
+- `/list`             - list a user's URLs
+- `/restore`          - unarchive a URL
+- `/view`             - show a URL's metadata
 
 
 ### Arguments
 
-- id    (int)                           - The id of the URL.
-- t     (string, required)              - The title of the link.
-- u     (string, required)              - The URL of the link.
-- s     (string, required)              - The source the URL was saved from. E.g. "Chrome on Mac" or "Via Mobile".
-- n     (string, optional)              - A note about the link. E.g. "My brother sent me this."
-- l     (string, optional)              - The Action Label E.g. "Watch"
-- tg    (string, optional)              - Comma separated list of Tags E.g. "podcast, thewestwingweekly"
-- c     (string, optional)              - Comma separated list of Contexts E.g. "work, home"
-- srtby (string, optional)              - Used to sort lists. E.g. "date"
-- srtor (string, optional)              - Used to sort lists. E.g. "asc"
-- ar    (int, optional)                 - Used to filter lists by archived. E.g. 1 = show archived URLs, 0 (default) show unarchived URLs
+- **id**                (int)                           - The id of the URL.
+- **title (t)**         (string, required)              - The title of the link.
+- **url (u)**           (string, required)              - The URL of the link.
+- **source (s)**        (string, required)              - The source the URL was saved from. E.g. "Chrome on Mac" or "Via Mobile".
+- **note (n)**          (string, optional)              - A note about the link. E.g. "My brother sent me this."
+- **label (l)**         (string, optional)              - The Action Label E.g. "Watch"
+- **tag (tg)**          (string, optional)              - Comma separated list of Tags E.g. "podcast, thewestwingweekly"
+- **context (c)**       (string, optional)              - Comma separated list of Contexts E.g. "work, home"
+- **sortby (srtby)**    (string, optional)              - Used to sort lists. E.g. "date"
+- **sortorder (srtor)** (string, optional)              - Used to sort lists. E.g. "asc"
+- **archive (ar)**                (int, optional)                 - Used to filter lists by archived. E.g. 1 = show archived URLs, 0 (default) show unarchived URLs
 
 ## Method documentation
 
@@ -43,16 +43,16 @@ An API that stores URLs to read, watch, listen to later on any device.
 This adds a URL to a user's list.
 
 #### Accepts:
-- t*
-- u*
-- s*
-- n
-- l
-- tg
-- c
+- title*
+- url*
+- source*
+- note
+- label
+- tag
+- context
 
 #### Returns:
-- /view
+- `/view`
 
 ### archive
 
@@ -62,7 +62,7 @@ This archives a URL from the user's list. It can be restored.
 - id*
 
 #### Returns:
-- /view
+- `/view`
 
 ### /delete
 
@@ -81,23 +81,23 @@ This edits the metadata on a URL. All values are overwritten with each new call.
 
 #### Accepts:
 - id*
-- t*
-- n
-- l
-- tg
-- c
+- title*
+- note
+- label
+- tag
+- context
 
 #### Returns:
-- /view
+- `/view`
 
 ### /list
 
 This lists a user's URL. By default, it shows the unarchived URLs.
 
 #### Accepts:
-- ar     - show archive 1, 0
-- srtby  - date (default)
-- srtor  - asc (default), desc
+- archive     - show archive 1, 0
+- sortby      - date (default)
+- sortorder   - asc (default), desc
 
 #### Returns:
 - List of URLs
@@ -110,7 +110,7 @@ Restores a URL from the archive.
 - id*
 
 #### Returns:
-- /view
+- `/view`
 
 ### /view
 
