@@ -115,7 +115,8 @@ This lists a user's URL. By default, it shows the unarchived URLs.
             "archived": 0,
             "note": "One of the best blogs evar.",
             "label": "Read",
-            "tags":           {
+            "tags": [
+                {
                     "id": 1,
                     "label": "blog",
                     "dateAdded": "12-01-2017"
