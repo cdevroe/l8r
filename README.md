@@ -30,7 +30,7 @@ An API that stores URLs to read, watch, listen to later on any device.
 - **source (s)**        (string, required)              - The source the URL was saved from. E.g. "Chrome on Mac" or "Via Mobile".
 - **note (n)**          (string, optional)              - A note about the link. E.g. "My brother sent me this."
 - **label (l)**         (string, optional)              - The Action Label E.g. "Watch"
-- **tag (tg)**          (string, optional)              - Comma separated list of Tags E.g. "podcast, thewestwingweekly"
+- **tags (tg)**          (string, optional)              - Comma separated list of Tags E.g. "podcast, thewestwingweekly"
 - **context (c)**       (string, optional)              - Comma separated list of Contexts E.g. "work, home"
 - **sortby (srtby)**    (string, optional)              - Used to sort lists. E.g. "date"
 - **sortorder (srtor)** (string, optional)              - Used to sort lists. E.g. "asc"
@@ -48,7 +48,7 @@ This adds a URL to a user's list.
 - source*
 - note
 - label
-- tag
+- tags
 - context
 
 #### Returns:
@@ -84,7 +84,7 @@ This edits the metadata on a URL. All values are overwritten with each new call.
 - title*
 - note
 - label
-- tag
+- tags
 - context
 
 #### Returns:
@@ -101,6 +101,45 @@ This lists a user's URL. By default, it shows the unarchived URLs.
 
 #### Returns:
 - List of URLs
+
+##### Example JSON Response
+
+```json
+{
+    list: [
+        link: [
+            id: 1,
+            title: "Colin Devroe &#8211; Reverse Engineer. Blogger.",
+            url: "http://cdevroe.com/",
+            source: "iOS Share Extension",
+            archived: 0,
+            note: "One of the best blogs evar.",
+            label: "Read",
+            tags: [
+                0: "blog",
+                1: "personal",
+                2: "microblog"
+            ],
+        context: "Home"
+        ],
+        link: [
+            id: 2,
+            title: "Internet Archive: Digital Library of Free Books, Movies, Music & Wayback Machine",
+            url: "http://archive.org/",
+            source: "Chrome Extension",
+            archived: 1,
+            note: "",
+            label: "Read",
+            tags: [
+                0: "internet",
+                1: "history",
+                2: "non-profit"
+            ],
+        context: "Work"
+        ],
+    ]
+}
+```
 
 ### /restore
 
@@ -121,6 +160,26 @@ Shows a URLs metadata.
 
 #### Returns:
 - All metadata of a URL
+
+##### Example JSON response
+
+```json
+{
+    id: 1,
+    title: "Colin Devroe &#8211; Reverse Engineer. Blogger.",
+    url: "http://cdevroe.com/",
+    archived: 0,
+    source: "iOS Share Extension",
+    note: "One of the best blogs evar.",
+    label: "Read",
+    tags: [
+        0: "blog",
+        1: "personal",
+        2: "microblog"
+    ],
+    context: "Home"
+}
+```
 
 
 ## Version History
