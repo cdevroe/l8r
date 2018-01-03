@@ -9,7 +9,7 @@ An API that stores URLs to read, watch, listen to later on any device.
 
 ### Endpoint prefixes for versioning:
 
-1. /v1/
+1. `/v1/`
 
 ### Methods
 
