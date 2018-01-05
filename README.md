@@ -4,12 +4,13 @@ An API that stores URLs to read, watch, listen to later on any device.
 
 ## Contributors
 - [Colin Devroe](http://cdevroe.com)
+- [Mark Keith](http://www.markrichardkeith.com/)
 
 ## API Documentation
 
 ### Endpoint prefixes for versioning:
 
-1. `/v1/`
+1. `/v1/` -- Current
 
 ### Methods
 
