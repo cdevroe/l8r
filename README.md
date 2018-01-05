@@ -1,6 +1,6 @@
 # Later - aka l8r
 
-An API that stores URLs to read, watch, listen to later on any device.
+An API that stores URLs to read, watch, do, buy, eat & drink, or listen to later on any device.
 
 ## Contributors
 - [Colin Devroe](http://cdevroe.com)
