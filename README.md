@@ -31,7 +31,7 @@ An API that stores URLs to read, watch, do, buy, eat & drink, or listen to later
 - **source (s)**        (`string`, required)              - The source the URL was saved from. E.g. "Chrome on Mac" or "Via Mobile".
 - **note (n)**          (`string`, optional)              - A note about the link. E.g. "My brother sent me this."
 - **label (l)**         (`string`, optional)              - The Action Label E.g. "Watch"
-- **tags (tg)**          (`string`, optional)              - Comma separated list of Tags E.g. "podcast, thewestwingweekly"
+- **tags (tg)**         (`string`, optional)              - Comma separated list of Tags E.g. "podcast, thewestwingweekly"
 - **context (c)**       (`string`, optional)              - Comma separated list of Contexts E.g. "work, home"
 - **sortby (srtby)**    (`string`, optional)              - Used to sort lists. E.g. "date"
 - **sortorder (srtor)** (`string`, optional)              - Used to sort lists. E.g. "asc"
