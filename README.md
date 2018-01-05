@@ -115,6 +115,7 @@ This lists a user's URL. By default, it shows the unarchived URLs.
             "archived": 0,
             "note": "One of the best blogs evar.",
             "label": "Read",
+            "context": "Home",
             "tags": [
                 {
                     "id": 1,
@@ -131,8 +132,7 @@ This lists a user's URL. By default, it shows the unarchived URLs.
                     "label": "micro-blog",
                     "dateAdded": "12-04-2017"
                 }
-            ],
-            "context": "Home"
+            ]
         },
         {
             "id": 2,
@@ -142,6 +142,7 @@ This lists a user's URL. By default, it shows the unarchived URLs.
             "archived": 1,
             "note": "",
             "label": "Read",
+            "context": "Work",
             "tags": [
                 {
                     "id": 4,
@@ -158,8 +159,7 @@ This lists a user's URL. By default, it shows the unarchived URLs.
                     "label": "non-profit",
                     "dateAdded": "12-04-2017"
                 }
-            ],
-            "context": "Work"
+            ]
         },
     ]
 }
@@ -196,6 +196,7 @@ Shows a URLs metadata.
     "source": "iOS Share Extension",
     "note": "One of the best blogs evar.",
     "label": "Read",
+    "context": "Home",
     "tags": [
       {
          "id": 1,
@@ -212,13 +213,12 @@ Shows a URLs metadata.
          "label": "micro-blog",
          "dateAdded": "12-04-2017"
       }
-   ],
-    "context": "Home"
+   ]
 }
 ```
 
 
 ## Version History
 
-- **1.0.0 Build 001** - January 3, 2018
+- **1.0.0 Build 001** - UNRELEASED
     - Initial readme document for API scheme.
