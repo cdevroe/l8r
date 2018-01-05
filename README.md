@@ -25,17 +25,17 @@ An API that stores URLs to read, watch, listen to later on any device.
 
 ### Arguments
 
-- **id**                (int)                           - The id of the URL.
-- **title (t)**         (string, required)              - The title of the link.
-- **url (u)**           (string, required)              - The URL of the link.
-- **source (s)**        (string, required)              - The source the URL was saved from. E.g. "Chrome on Mac" or "Via Mobile".
-- **note (n)**          (string, optional)              - A note about the link. E.g. "My brother sent me this."
-- **label (l)**         (string, optional)              - The Action Label E.g. "Watch"
-- **tags (tg)**          (string, optional)              - Comma separated list of Tags E.g. "podcast, thewestwingweekly"
-- **context (c)**       (string, optional)              - Comma separated list of Contexts E.g. "work, home"
-- **sortby (srtby)**    (string, optional)              - Used to sort lists. E.g. "date"
-- **sortorder (srtor)** (string, optional)              - Used to sort lists. E.g. "asc"
-- **archive (ar)**                (int, optional)                 - Used to filter lists by archived. E.g. 1 = show archived URLs, 0 (default) show unarchived URLs
+- **id**                (`int`)                           - The id of the URL.
+- **title (t)**         (`string`, required)              - The title of the link.
+- **url (u)**           (`string`, required)              - The URL of the link.
+- **source (s)**        (`string`, required)              - The source the URL was saved from. E.g. "Chrome on Mac" or "Via Mobile".
+- **note (n)**          (`string`, optional)              - A note about the link. E.g. "My brother sent me this."
+- **label (l)**         (`string`, optional)              - The Action Label E.g. "Watch"
+- **tags (tg)**          (`string`, optional)              - Comma separated list of Tags E.g. "podcast, thewestwingweekly"
+- **context (c)**       (`string`, optional)              - Comma separated list of Contexts E.g. "work, home"
+- **sortby (srtby)**    (`string`, optional)              - Used to sort lists. E.g. "date"
+- **sortorder (srtor)** (`string`, optional)              - Used to sort lists. E.g. "asc"
+- **archive (ar)**                (`int`, optional)                 - Used to filter lists by archived. E.g. 1 = show archived URLs, 0 (default) show unarchived URLs
 
 ## Method documentation
 
